@@ -14,3 +14,5 @@ npm install
 To run the application
 
 npm run dev / npm run start
+
+You can also import the postman collection present inside folder to test the REST API's 
