@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "d87d3764-a58e-4dd6-a37f-eeb67aa29895",
+		"name": "user auth",
+		"description": "This is endpoint used for register",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26280531",
+		"_collection_link": "https://nam-singapore.postman.co/workspace/My-Workspace~9d32a263-d07b-4eb9-8dbf-c3a1854fb449/collection/26280531-d87d3764-a58e-4dd6-a37f-eeb67aa29895?action=share&source=collection_link&creator=26280531"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"John Doe\",\n    \"username\": \"johndoei\",\n    \"password\": \"password1234\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/create-user"
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"johndoei\",\n    \"password\": \"password1234\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/auth"
+			},
+			"response": []
+		},
+		{
+			"name": "user list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/get-details"
+			},
+			"response": []
+		}
+	]
+}
